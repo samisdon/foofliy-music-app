@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Themes */
+.app.dark {
+  background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+  color: white;
+}
+
+.app.light {
+  background: linear-gradient(135deg, #f4f4f4, #ffffff);
+  color: black;
+}
+
+.app {
+  min-height: 100vh;
+  text-align: center;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 420px;
+  margin: auto;
+}
+
+header button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Search */
+.search {
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 420px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+/* Glass List */
+.glass {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Songs */
+.song {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.song:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.song span {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Player */
+.player {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(0, 255, 150, 0.15);
+}
